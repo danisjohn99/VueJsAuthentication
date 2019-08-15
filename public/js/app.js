@@ -2043,7 +2043,7 @@ __webpack_require__.r(__webpack_exports__);
           email: this.email,
           password: this.password
         };
-        this.app.req.post('auth/register', data).then(function (response) {
+        this.app.req.post('api/register', data).then(function (response) {
           _this.app.user = response.data;
 
           _this.$router.push("/");

@@ -108,7 +108,7 @@
                         password : this.password,
 					}
 
-					this.app.req.post('auth/register', data).then(response => {
+					this.app.req.post('api/register', data).then(response => {
                          this.app.user = response.data;
                          this.$router.push("/");
 					}).catch(error => {
